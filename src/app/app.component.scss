@@ -1,0 +1,42 @@
+.navbar {
+  background-color: transparent;
+  z-index: 1;
+
+  &-brand {
+    margin-left: 0px;
+    padding: 0 18px 0 0px;
+    background-color: #242038;
+    font-family: "Carrois Gothic SC", sans-serif;
+    font-size: 3vh;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px #752cb5;
+    color: #bb8ce3;
+  }
+}
+
+.nav {
+  background-color: transparent !important;
+}
+
+.backgroundline {
+  clip-path: polygon(0 54%, 0 56%, 100% 56%, 100% 54%);
+  background: #f5effb;
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  top: 0%;
+  left: 2%;
+  z-index: -1;
+}
+
+a {
+  color: #f5effb;
+  background-color: #bb8ce3;
+  border-radius: 4px;
+  margin: 0px 4px 0px 4px;
+  font-size: 2vh;
+}
+
+.nav-link {
+  padding: 0.2rem 1rem !important;
+}

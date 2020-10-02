@@ -1,0 +1,61 @@
+<div class="aboutright">
+  <div [@showHide]="isShown ? 'show' : 'hide'" class="color4"></div>
+  <div [@showHide]="isShown ? 'show' : 'hide'" class="color3"></div>
+
+  <div id="about">
+    <div class="title">Rebecka who?</div>
+    <div class="asterisks">
+      <i class="fas fa-asterisk" id="asterisk1"></i>
+      <i class="fas fa-asterisk" id="asterisk2"></i>
+      <i class="fas fa-asterisk" id="asterisk3"></i>
+    </div>
+    Originally working as a radiographer, a poor danish healthcare system
+    planted a seed in my mind: If I changed direction in life, could I be able
+    to develop something better? A few years later and I am now studying to
+    become a data technician specialising in programming, a type of education
+    where school is less and learning by doing as a real software developer is
+    definitely more. I started my new career at Odense Kommune in Denmark in
+    2019 where I maintain and develop web applications for our employees.<br />
+    Learning full-stack development I discovered that I have a (huge) soft spot
+    in my heart for frontend, and my dream is to be able to create good-looking
+    and user friendly applications that'll make a difference for the individual.
+  </div>
+</div>
+
+<div class="aboutleft">
+  <img
+    src="../../assets/118349400_10223327425512125_2202773820265054994_n.jpg"
+    width="19%"
+    id="img"
+  />
+  <div
+    [@showHide2]="{
+      value: isShown ? 'show' : 'hide',
+      params: { size: 6, delay: 0 }
+    }"
+    class="circleang"
+  >
+    <img src="../../assets/angular.png" width="7%" />
+  </div>
+  <div
+    [@showHide2]="{
+      value: isShown ? 'show' : 'hide',
+      params: { endSize: 4, size: 4, delay: 1 }
+    }"
+    class="circleangjs"
+  >
+    <img src="../../assets/angularjs.png" width="6%" />
+  </div>
+  <div class="circlecsharp">
+    <img src="../../assets/Csharp.png" width="5%" />
+  </div>
+  <div class="circlesn">
+    <img src="../../assets/servicenow2.png" width="8%" />
+  </div>
+  <div class="circlets">
+    <img src="../../assets/typescript.svg" width="5%" />
+  </div>
+  <div class="circlehtmlcssjs">
+    <img src="../../assets/htmlcssjs.png" width="6%" />
+  </div>
+</div>

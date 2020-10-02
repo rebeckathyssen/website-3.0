@@ -1,0 +1,273 @@
+////// Colorful bricks //////
+
+.color4 {
+  width: 100%;
+  height: 100%;
+  background: #752cb5;
+  position: absolute;
+  clip-path: polygon(65% 0, 100% 0%, 100% 100%, 35% 100%);
+  bottom: -100%;
+}
+
+.color3 {
+  width: 100%;
+  height: 100%;
+  background: #934ad3;
+  position: absolute;
+  clip-path: polygon(90% 0, 100% 0, 85% 50%, 75% 50%);
+  left: -10%;
+  top: -50%;
+}
+
+.color2 {
+  width: 100%;
+  height: 100%;
+  background: #a76bdb;
+  position: absolute;
+  clip-path: polygon(50% 20%, 45% 37%, 55% 37%);
+  left: 5%;
+  bottom: -80%;
+}
+
+.color1 {
+  width: 100%;
+  height: 100%;
+  background: #bb8ce3;
+  position: absolute;
+  clip-path: polygon(30% 0, 40% 0, 70% 100%, 60% 100%);
+  top: -100%;
+  left: -25%;
+}
+
+.color2b {
+  width: 20%;
+  height: 20%;
+  background: #a76bdb;
+  position: absolute;
+  clip-path: polygon(50% 85%, 25% 0%, 75% 0%);
+  left: 35%;
+  top: -20%;
+}
+
+.color3b {
+  width: 100%;
+  height: 100%;
+  background: #934ad3;
+  position: absolute;
+  clip-path: polygon(31% 32%, 36% 15%, 61% 100%, 50% 100%);
+  left: 29%;
+  top: 85%;
+}
+
+.color1b {
+  width: 100%;
+  height: 100%;
+  background: #bb8ce3;
+  position: absolute;
+  clip-path: polygon(90% 0%, 95% 17%, 70% 100%, 60% 100%);
+  left: -65%;
+  top: 100%;
+}
+
+.color1c {
+  width: 100%;
+  height: 100%;
+  background: #bb8ce3;
+  position: absolute;
+  clip-path: polygon(36% 35%, 38% 35%, 57% 100%, 55% 100%);
+  left: 33%;
+  top: 70%;
+}
+
+.color1d {
+  width: 100%;
+  height: 100%;
+  background: #bb8ce3;
+  position: absolute;
+  clip-path: polygon(38% 37%, 40% 37%, 59% 100%, 57% 100%);
+  top: -102%;
+  left: -29%;
+}
+
+////// Name //////
+
+.name {
+  font-family: "Carrois Gothic SC", sans-serif;
+  font-size: 5.5vh;
+  letter-spacing: 2px;
+  margin: 0 0 -13px 0;
+  position: absolute;
+  left: -65%;
+  top: 26%;
+  text-shadow: 2px 2px #752cb5;
+}
+
+////// Just another ... //////
+
+.content {
+  position: absolute;
+  line-height: 40px;
+  width: 20%;
+  left: -30%;
+  top: 55%;
+
+  &__container {
+    overflow: hidden;
+    height: 40px;
+    padding: 6px 20px;
+
+    &:before {
+      content: "{";
+      left: 0;
+    }
+
+    &:after {
+      content: "}";
+      position: absolute;
+      right: 1%;
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+      top: 0;
+
+      color: #934ad3;
+      font-size: 7vh;
+      line-height: 40px;
+
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &__text {
+      display: inline;
+      float: left;
+      margin-left: 5%;
+    }
+
+    &__list {
+      margin-top: 0;
+      padding-left: 46%;
+      text-align: left;
+      list-style: none;
+      color: #cdadeb;
+      animation-name: change;
+      animation-delay: 1.5s;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height: 40px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+////// Enter //////
+.enter {
+  position: absolute;
+  right: 1%;
+  bottom: -8%;
+  font-size: 3vh;
+  line-height: 14px;
+  text-align: center;
+  width: 18%;
+  cursor: pointer;
+
+  &_1 {
+    letter-spacing: 2px;
+    color: #cdadeb;
+    //margin-right: 10%;
+  }
+  &_2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #2a1042;
+    //margin-right: 10%;
+  }
+
+  &:before {
+    content: "<";
+    top: -3%;
+    left: 8%;
+    animation: leftarrow;
+  }
+
+  &:after {
+    content: "/>";
+    top: -3%;
+    right: 0%;
+    animation: rightarrow;
+  }
+
+  &:before,
+  &:after {
+    color: #cdadeb;
+    position: absolute;
+    font-size: 10vh;
+    opacity: 0.3;
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.test:hover {
+}
+
+@keyframes leftarrow {
+  50% {
+    transform: translate(-10%, 0%);
+  }
+}
+
+@keyframes rightarrow {
+  50% {
+    transform: translate(10%, 0%);
+  }
+}
+
+a {
+  text-decoration: none !important;
+}

@@ -1,0 +1,168 @@
+.color4 {
+  width: 100%;
+  height: 100%;
+  background: #752cb5;
+  position: absolute;
+  clip-path: polygon(65% 0, 100% 0%, 100% 100%, 35% 100%);
+  bottom: -100%;
+  left: -20%;
+  z-index: 0;
+}
+
+.color3 {
+  width: 100%;
+  height: 100%;
+  background: #934ad3;
+  position: absolute;
+  clip-path: polygon(90% 0, 100% 0%, 70% 100%, 60% 100%);
+  //left: -25%;
+  //top: 0%;
+  left: -45%;
+  top: 100%;
+}
+
+#about {
+  z-index: 1;
+  position: absolute;
+  width: 30%;
+  right: 6%;
+  top: 20%;
+  text-align: center;
+  line-height: 35px;
+
+  .title {
+    font-family: "Carrois Gothic SC", sans-serif;
+    font-size: 3vh;
+  }
+
+  #asterisk1,
+  #asterisk3 {
+    color: #a76bdb;
+    font-size: 1.4vh;
+    margin: 5px;
+  }
+
+  #asterisk2 {
+    color: #bb8ce3;
+    font-size: 1.7vh;
+  }
+}
+
+.aboutleft {
+  #img {
+    //filter: grayscale(100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 13%;
+    top: 30%;
+    border: solid #f5effb 3px;
+  }
+
+  // hvis jeg engang skal rotate: filter: blur(0)
+  .circleang {
+    position: absolute;
+    clip-path: circle(6% at 50% 50%);
+    background: #934ad3;
+    width: 100%;
+    height: 100%;
+    left: -43%;
+    top: -20%;
+    img {
+      position: absolute;
+      left: 46.5%;
+      top: 42.5%;
+      animation: imagepopup 0.7s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes imagepopup {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .circleangjs {
+    position: absolute;
+    clip-path: circle(0% at 50% 50%);
+    background: #bb8ce3;
+    width: 100%;
+    height: 100%;
+    left: -26%;
+    top: -35%;
+    img {
+      position: absolute;
+      left: 47%;
+      top: 46%;
+      animation: imagepopup 0.7s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+    }
+  }
+
+  .circlecsharp {
+    position: absolute;
+    clip-path: circle(5% at 50% 50%);
+    background: #bb8ce3;
+    width: 100%;
+    height: 100%;
+    left: -11%;
+    top: 12%;
+    img {
+      position: absolute;
+      left: 47.5%;
+      top: 44%;
+    }
+  }
+
+  .circlesn {
+    position: absolute;
+    clip-path: circle(4% at 50% 50%);
+    background: #934ad3;
+    width: 100%;
+    height: 100%;
+    left: -23%;
+    top: 34%;
+    img {
+      position: absolute;
+      left: 46.2%;
+      top: 44%;
+    }
+  }
+
+  .circlets {
+    position: absolute;
+    clip-path: circle(6% at 50% 50%);
+    background: #bb8ce3;
+    width: 100%;
+    height: 100%;
+    left: -42%;
+    top: 22%;
+    img {
+      position: absolute;
+      left: 47.5%;
+      top: 44.8%;
+    }
+  }
+
+  .circlehtmlcssjs {
+    position: absolute;
+    clip-path: circle(6% at 50% 50%);
+    background: #934ad3;
+    width: 100%;
+    height: 100%;
+    left: -10%;
+    top: -20%;
+    img {
+      position: absolute;
+      left: 47%;
+      top: 43%;
+    }
+  }
+}

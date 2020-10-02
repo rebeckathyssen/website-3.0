@@ -1,0 +1,35 @@
+<div class="drawing">
+  <div [@showHide]="isShown ? 'show' : 'hide'" class="color1"></div>
+  <div [@showHide2]="isShown ? 'show' : 'hide'" class="color4"></div>
+  <div [@showHide3]="isShown ? 'show' : 'hide'" class="color3"></div>
+  <div [@showHide4]="isShown ? 'show' : 'hide'" class="color2"></div>
+  <div [@showHide5]="isShown ? 'show' : 'hide'" class="color3b"></div>
+  <div [@showHide6]="isShown ? 'show' : 'hide'" class="color2b"></div>
+  <div [@showHide7]="isShown ? 'show' : 'hide'" class="color1b"></div>
+  <div [@showHide8]="isShown ? 'show' : 'hide'" class="color1c"></div>
+  <div [@showHide9]="isShown ? 'show' : 'hide'" class="color1d"></div>
+</div>
+
+<div [@showHide10]="isShown ? 'show' : 'hide'" class="name">
+  .RebeckaElisabethThyssen
+</div>
+<!--<div class="title">
+        Data Technician Trainee specialising in Programming
+      </div>-->
+<div [@showHide11]="isShown ? 'show' : 'hide'" class="content">
+  <div class="content__container">
+    <p class="content__container__text">just-another:</p>
+
+    <ul class="content__container__list">
+      <li class="content__container__list__item">frontend-lover;</li>
+      <li class="content__container__list__item">UI/UX-enthusiast;</li>
+      <li class="content__container__list__item">CSS-addict;</li>
+      <li class="content__container__list__item">nerd;</li>
+    </ul>
+  </div>
+</div>
+
+<div class="enter" (click)="toggle()" [@showHide12]="isShown ? 'show' : 'hide'">
+  <div class="enter_1">Learn more</div>
+  <div class="enter_2">about me</div>
+</div>
